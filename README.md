@@ -1,13 +1,13 @@
-# Crx Builder for webpack
+# Crx3 Builder for webpack
 A webpack plugin to package chrome extensions (crx) post build
 
 ## Usage
 
 ``` javascript
-var Crx = require("crx-webpack-plugin");
+var Crx3 = require("crx3-webpack-plugin");
 module.exports = {
 	plugins: [
-		new Crx({
+		new Crx3({
 			keyFile: 'key.pem',
 			contentPath: 'build',
 			outputPath: 'dist',
