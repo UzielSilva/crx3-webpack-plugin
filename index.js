@@ -44,12 +44,12 @@ Plugin.prototype.package = function() {
   var self = this;
   mkdirp(self.outputPath, function(err) {
     if (err) throw(err)
-    this.crx = crx3([this.contentPath], {
-      keyPath: this.keyFile,
-      crxPath: this.crxFile,
-      zipPath: this.zipFile,
-      xmlPath: this.updateFile,
-      crxURL: this.updateUrl,
+    self.crx = crx3([self.contentPath], {
+      keyPath: self.keyFile,
+      crxPath: self.crxFile,
+      zipPath: self.zipFile,
+      xmlPath: self.updateFile,
+      crxURL: self.updateUrl,
     });
   });
 }
